@@ -1,4 +1,12 @@
-h1 {
-    font-family: sans-serif;
-    color: aquamarine;
+h2 {
+    font-family: 'Lucida Grande';
+    line-height: normal;
+    color: brown;
 }
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
