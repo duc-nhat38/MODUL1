@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
     <h2>Market Research Survey </h2>
@@ -28,8 +28,9 @@
     <input type="radio" name="Gender">Male<br>
     <input type="radio" name="Gender">FeMale<br>
     <input type="radio" name="Gender">Nonbinary<br>
-    <input type="radio" name="Gender" >Other<br>
+    <input type="radio" name="Gender" onclick="documen.getElementById('div1').innerHTML='ab'">Other<br>
         <input type="text" name=""><br>
+        <div id="div1"></div>
     <p>Which of the following products have your purchased in the last 2 months. Please check all that apply.</p>
     <input type="checkbox" name="">Product1<br>
     <input type="checkbox" name="">Product2<br>
@@ -39,7 +40,7 @@
     <input type="radio" name="">Weekly<br>
     <input type="radio" name="">Monthly<br>
     <p>What would you pay for the new product?</p>
-    <table>
+    <table">
         <tr>
             <td>$</td>
             <td><input type="text" name=""></td>
@@ -48,7 +49,7 @@
         </tr>
         <tr>
             <td></td>
-            <td>Dolla</td>
+            <td">Dolla</td>
             <td></td>
             <td>Cent</td>
         </tr>
@@ -57,34 +58,34 @@
     <textarea name="" rows="10" cols="70"></textarea>
     <p>Please rate your level of agreement with the following statements.</p>
     <table>
-        <tr>
-            <th></th>
-            <th>Strongly Disagree</th>
-            <th>Disagree</th>
-            <th>Agree</th>
-            <th>Strongly Agree</th>
-        </tr>
-        <tr>
-            <td>Our products a priced fairly.</td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-        </tr>
-        <tr>
-            <td>Our products a high quality.</td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-        </tr>
-        <tr>
-            <td>You would recommend our products to a friend or coworker.</td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-            <td><input type="radio"></td>
-        </tr>
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <td>Our products a priced fairly.</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>Our products a high quality.</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>You would recommend our products to a friend or coworker.</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
     </table>
     <input type="submit" name="" value="Submit">
 </body>

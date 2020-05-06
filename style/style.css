@@ -6,7 +6,7 @@ h2 {
 p {
     font-family: 'Times New Roman', Times, serif;
 }
-table, th, td {
+table,th,td,tr{
     border: 1px solid black;
     border-collapse: collapse;
   }
