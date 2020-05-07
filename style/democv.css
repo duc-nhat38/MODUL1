@@ -1,0 +1,19 @@
+table {
+    background-color: slategray;
+    font-size: 30px;
+    border: 2px solid blue;
+    color: cornsilk;
+    border-collapse: collapse;
+    margin-left: 300px;
+}
+img {
+    width: 200px;
+    height: 250px;
+}
+.tr1, .tr2 {
+    background-color: cornsilk;
+    color: black;
+}
+td {
+    width: 400px;
+}
