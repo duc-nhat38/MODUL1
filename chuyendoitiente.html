@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <p>Amount</p>
+    <input id="demo" value="" type="number">
+    <p>From Currenci</p>
+    <select id="sl1">
+        <option value="VND" >Viet Nam Dong</option>
+        <option value="USD" >Dolla</option>
+    </select>
+    <p>To Currency</p>
+    <select id="sl2">
+        <option value="VND" >Viet Nam Dong</option>
+        <option value="USD" >Dolla</option>
+    </select>
+    <button type="button" onclick="myFunction()">Conver</button>
+    <p id="demo2"></p>
+    </div>
+    <script>
+        function myFunction(){
+            let money = document.getElementById("demo").value ;
+            let select1 = document.getElementById("sl1").value;
+            let select2 = document.getElementById("sl2").value;
+            let name = "VND";
+            let name1 ="USD";
+            let text;
+
+            if (select1 == name){
+                if (select2 == name1){
+                    money = money / 23000
+                    text = "Result:"+"<br>" + money
+                    
+                }
+                else {
+                   
+                    text = "Result:"+"<br>" + money
+                }
+            }
+            else{
+                if (name1 == select2){
+                    
+                    text = "Result:"+"<br>" + money
+                    
+                }
+                else{
+                    money = money *23000        
+                    text = "Result:"+"<br>" + money
+                    
+                }
+            }
+            document.getElementById('demo2').innerHTML = text;
+        } 
+        
+    </script>
+</body>
+</html>
