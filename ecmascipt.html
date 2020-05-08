@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>What is the “official” name of JavaScript?</p>
+    <input type="text" value="" id="demo">
+    <button type="button" onclick="myFuncion()">Trả lời.</button>
+    <p id="demo2"></p>
+    <script>
+        function myFuncion(){
+            let answer = document.getElementById('demo').value;
+            let name ;
+            if (answer == "ECMAScript"){
+                name = "Right!";
+            }
+            else {
+                name = "Didn’t know? ECMAScript!";
+            }
+            document.getElementById('demo2').innerHTML = name ;
+        }
+    </script>
+</body>
+</html>
