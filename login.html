@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Tên đăng nhập:</p>
+    <input type="text" value="" id="demo">
+    <p>Mật khẩu:</p>
+    <input type="text" value="" id="demo2"><br>
+    <button type="button" onclick="myFunction()">Đăng nhập</button>
+    <script>
+        function myFunction(){
+            let name = document.getElementById('demo').value;
+            let password = document.getElementById('demo2').value;
+            if (name === "Admin"){
+                if (password === "TheMaster"){
+                    alert('Welcome!')
+                }
+                else {
+                    if (password === ''){
+                        alert('Canceld!') 
+                    }
+                    else {
+                        alert('Wrong password')
+                    }   
+                }
+            }
+            else {
+                if (name === ""){
+                    alert('Canceld')
+                }
+                else {
+                    alert("I don't know you!")
+                }
+
+            }
+                
+        }
+    </script>
+</body>
+</html>
