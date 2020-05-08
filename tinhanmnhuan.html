@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="in1" value="" >
+    <button type="button" onclick="namnhuan()">Tìm</button>
+    <p id="demo"></p>
+    <script>
+        function namnhuan(){
+            let year = document.getElementById('in1').value;
+            let result;
+            if (year % 4 == 0){
+                if (year % 100 != 0){
+                    result = "Năm này năm nhuận!";
+                }
+                else {
+                    if(year % 400 == 0){
+                        result = "Năm này năm nhuận!";
+                    }
+                    else{
+                        result = "Năm này không phải năm nhuận!";
+                    }
+                }
+            }
+            else {
+                result = "Năm này không phải năm nhuận!";
+            }
+        document.getElementById('demo').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
