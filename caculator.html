@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo3 {
+            width: 180px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <p>Nhập số thứ nhất:</p>
+                <input type="number" value="" id="demo">
+            </td>
+            <td colspan="2">
+                <p>Nhập số thứ hai:</p>
+                <input type="number" value="" id="demo2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="cong()">Addition(+)</button>
+            </td>
+            <td>
+                <button type="button" onclick="tru()">Subtraction(-)</button>
+            </td>
+            <td>
+                <button type="button" onclick="nhan()">Multiplication(*)</button>
+            </td>
+            <td>
+                <button type="button" onclick="chia()">Division(/)</button>
+            </td>
+        </tr>
+    </table>
+    <p>Result:</p>
+    <button type="button" id="demo3">
+    <script>
+        function cong(){
+            let number1 = parseFloat(document.getElementById('demo').value );
+            let number2 = parseFloat(document.getElementById('demo2').value);
+            let number3 = number1 + number2 ;
+            document.getElementById('demo3').innerHTML = number3 ;
+        }
+        function tru(){
+            let number1 = parseFloat(document.getElementById('demo').value );
+            let number2 = parseFloat(document.getElementById('demo2').value);
+            let number3 = number1 - number2 ;
+            document.getElementById('demo3').innerHTML = number3 ;
+        }
+        function nhan(){
+            let number1 = parseFloat(document.getElementById('demo').value );
+            let number2 = parseFloat(document.getElementById('demo2').value);
+            let number3 = number1 * number2 ;
+            document.getElementById('demo3').innerHTML = number3 ;
+        }
+        function chia(){
+            let number1 = parseFloat(document.getElementById('demo').value );
+            let number2 = parseFloat(document.getElementById('demo2').value);
+            let number3 = number1 / number2 ;
+            document.getElementById('demo3').innerHTML = number3 ;
+        }
+    </script>
+</html>
