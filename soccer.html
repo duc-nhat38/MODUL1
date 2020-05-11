@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
 <body>
-    <img src="/bong.png" alt="quả bóng" id="img1">
-    <p>Click button below to move the image to the right.</p>
+    <img src="/bong.png" id="ducnhat" style="position: absolute; left: 50px;">
+    <br>
+    <button onclick="mubon()">Click!</button>
     <script>
-        <button type="button" value="" onclick="soccer()">Click!</button>
-        function soccer() {
-            let imgObj = document.getElementById('img1')
+        let bon = document.getElementById('ducnhat');
+        function mubon() {
+            bon.style.left = parseInt(bon.style.left) + 10 + 'px';
         }
     </script>
-    
+
 </body>
 </html>
