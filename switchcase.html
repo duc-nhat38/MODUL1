@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //bài 1
+        let brower ;
+        switch (brower) {
+            case 'Edge' :
+            alert("You've got the Edge!");
+            break ;
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari' :
+            case ' Opera':
+            alert('Okay we support these browsers too');
+            break;
+            default :
+            alert('We hope that this page looks ok!');
+
+        }    
+        //bài 2
+        let a = +prompt('a?');
+        switch (a) {
+            case 0 :
+                alert(0);
+                break;
+            case 1 :
+                alert(1);
+                break;
+            case 2:
+            case 3 :
+                alert(2,3)
+                break;
+            
+        }
+        //bài 3
+        let number = parseFloat(prompt('Nhập một số:'));
+        if (number > 0) {
+        document.write(1)
+        }else{
+            if (number < 0) {
+                document.write(-1)
+            }else {
+                document.write(0)
+            }
+        }
+    </script>
+</body>
+</html>
