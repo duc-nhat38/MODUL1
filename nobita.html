@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="docReady()">
+    <img src="/nobita.png" id="nabito" style="position: absolute;left :0px;top :0px;">
+
+    <script>
+        let nobita = document.getElementById('nabito');
+        function leftNobita() {
+            nobita.style.left = parseInt(nobita.style.left) - 10 + "px";
+        }
+        function rightNobita() {
+            nobita.style.left = parseInt(nobita.style.left) + 10 + "px";
+        }
+        function topNobita() {
+            nobita.style.top = parseInt(nobita.style.top) - 10 + "px";
+        }
+        function bottomNobita() {
+            nobita.style.top = parseInt(nobita.style.top) + 10 + "px";
+        }
+        function moveSelection(evt) {
+            console.log(evt.keyCode);
+            switch (evt.keyCode) {
+                case 37:
+                    leftNobita();
+                    break;
+                case 39:
+                    rightNobita();
+                    break;
+                case 38:
+                    topNobita();
+                    break;
+                case 40:
+                    bottomNobita();
+                    break;
+            }
+        }
+        function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+    </script>
+</body>
+
+</html>
