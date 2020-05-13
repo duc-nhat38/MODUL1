@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>DO YOU LOVE ME?</p>
+    <div id="demo"></div>
+    <button type="button" onclick="myFunction()" value="yes">yes</button>
+    <button type="button" style="left: 10px; top: 30px;  position: absolute"  onmouseover="onMouseover()" value="no" id="demo2">no</button>
+    <script>
+        function myFunction() {
+            document.getElementById('demo').innerHTML = '<3';
+        }
+        function onMouseover() {
+
+            document.getElementById('demo2').style.left= Math.random()*500+ 'px';
+            document.getElementById('demo2').style.top= Math.random()*500+ 'px';
+        }
+     
+    </script>
+</body>
+</html>

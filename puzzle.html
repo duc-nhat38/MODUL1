@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <button  onclick="myFunction()"><img src="/cat.jpeg" alt="cat" id="cat"></button>
+    <script>
+        let image = document.getElementById('cat');
+        function myFunction() {
+            if (image.alt === 'cat') {
+                document.getElementById('cat').src= 'house.jpg';
+                document.getElementById('cat').alt= 'house';
+            } else {
+                document.getElementById('cat').src= 'cat.jpeg';
+                document.getElementById('cat').alt= 'cat';
+            }
+           
+        }
+    </script>
+</body>
+</html>
