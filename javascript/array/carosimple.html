@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Caro Game Simple</h1>
+    <div id="div1"></div>
+    <button type="button" onclick="gameCaro()">Change Value</button>
+    <script>
+        let sum = '';
+        let array = [];
+        for (let i = 0; i < 5; i++) {
+            array[i] = [];
+            sum += '<br>'
+            for (let j = 0; j < 5; j++) {
+                array[i][j] = 0;
+                sum += array[i][j] + "&nbsp;&nbsp;"
+
+            }
+            document.getElementById('div1').innerHTML = sum;
+        }
+    </script>
+</body>
+
+</html>
