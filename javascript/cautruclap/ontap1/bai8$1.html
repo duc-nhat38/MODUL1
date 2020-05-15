@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="play()">chơi</button>
+    <script>
+        function play() {
+            let a = +prompt('Nhập khoảng bạn muốn đoán từ:');
+            let b = +prompt('đến:');
+            let result = 0;
+            while ((result < a || result > b)) {
+                result = Math.round(Math.random() * 101);
+            }
+
+            let num = +prompt('Nhập số bạn muốn đoán:')
+            let count = 0;
+            while (true) {
+                if (num === result) {
+                    alert('Chúc mừng bạn đã đúng,số đó là:' + num);
+                    break;
+                }
+                if (num > result){
+                    alert('lớn quá')
+                }
+                if (num<result){
+                    alert('nhỏ rứa');
+                }
+                if (count===2){
+                    alert('bạn đã hết lượt');
+                    break;
+                }
+                +prompt('Đoán lại');
+                count++;
+            }
+        }
+    </script>
+</body>
+
+</html>
