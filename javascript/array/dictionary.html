@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button2 {
+            width: 150px;
+            height: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Từ điển Anh-Việt</h2>
+    <p>Nhập từ bạn muốn kiếm. VD : Hello.</p>
+    <select name="" id="select1">
+        <option value="AV">Anh-Việt</option>
+        <option value="VA">Việt-Anh</option>
+    </select>
+    <input type="text" id="input1">
+    
+    <button type="submit" id="button1" onclick="myButton()">Tra cứu</button>
+    <button type="button" id="button2"></button>
+    <script>
+
+        function myButton() {
+            let selec = document.getElementById('select1').value;
+            let str = document.getElementById('input1').value;
+            //let lang = str.toString();
+            let result = '';
+            let Eng = ['Hello', 'Bye bye', 'Cat', 'Dog', 'Book', 'Football', 'House', 'Pen'];
+            let Viet = ['Xin chào', 'Tạm biệt', 'Mèo', 'Chó', 'Sách', 'Đá bóng', 'Nhà', 'Bút'];
+            if (selec === 'AV'){
+                for (let i=0;i<Eng.length;i++){
+                      if(Eng[i]===str){
+                          result = Viet[i];
+                          document.getElementById('button2').innerHTML = result;
+                      }
+                }
+            }else{
+                for (let j =0;j<Viet.length;j++){
+                    if(Viet[j]===str){
+                        result = Eng[j];
+                          document.getElementById('button2').innerHTML = result;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
