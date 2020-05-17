@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tiengoc = +prompt('Nhập số tiền cho vay :');
+        
+        let thoigian = +prompt('Nhập thời hạn (tháng):');
+        
+        if (thoigian>12) {
+             alert('Tổng số tiền lãi phải trả là:' + (tiengoc*0.093));
+        }else{
+            if(thoigian>6){
+                alert('Tổng số tiền lãi phải trả là:' + (tiengoc*0.078));
+            }else{
+                alert('Tổng số tiền lãi phải trả là:' + (tiengoc*0.068));
+            }
+        }
+    </script>
+</body>
+</html>

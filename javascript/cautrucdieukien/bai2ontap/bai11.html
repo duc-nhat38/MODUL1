@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let monney = parseFloat(prompt('Nhập số tiền lương của bạn (triệu đồng) :'));
+        if (monney>80) {
+            alert('Số tiền thuế phải đóng là :'+((0.35*monney)-9.85) +' '+'Triệu đồng');
+        }else {
+            if (monney>52){
+                alert('Số tiền thuế phải đóng là :'+((0.3*monney)-5.85) +' '+'Triệu đồng');
+            }else{
+                if (monney>32){
+                    alert('Số tiền thuế phải đóng là :'+((0.25*monney)-3.25) +' '+'Triệu đồng');
+                }else{
+                    if(monney>18){
+                        alert('Số tiền thuế phải đóng là :'+((0.2*monney)-1.65) +' '+'Triệu đồng');
+                    }else {
+                        if(monney>10){
+                            alert('Số tiền thuế phải đóng là :'+((0.15*monney)-0.75) +' '+'Triệu đồng');
+                        }else{
+                            if(monney>5){
+                                alert('Số tiền thuế phải đóng là :'+((0.1*monney)-0.25) +' '+'Triệu đồng');
+                            }else{
+                                alert('Số tiền thuế phải đóng là :'+(0.5*monney) +' '+'Triệu đồng');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

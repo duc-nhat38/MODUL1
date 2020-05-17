@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = +prompt('Nhập hệ số cũ :');
+        let num2 = +prompt('Nhập hệ số mới :');
+        let num = num2 - num1;
+        if (num < 6){
+            alert('Tiền điện phải trả là :'+' '+(num*1685)+'Đồng');
+        }else {
+            if (num < 22){
+                alert('Tiền điện phải trả là :'+' '+((6*1685)+(num-6)*1610)+'Đồng');
+            }else{
+                if(num < 110) {
+                    alert('Tiền điện phải trả là :'+' '+((6*1685)+(16*1611)+(num-22)*1555)+'Đồng');
+                }else {
+                    alert('Tiền điện phải trả là :'+' '+((6*1685)+(16*1611)+(82*1555)+(num-110)*1536)+'Đồng');
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
