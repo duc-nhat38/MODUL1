@@ -12,8 +12,9 @@
         let arr3= [];
         let arr4= [0, 0, 0, 0, 0, 0];
         function minArray(arr) {
-            if (arr.length === 0){}
-               return 'hàm rỗng'
+            if (arr.length === 0){
+                return 'hàm rỗng'
+            }
             
             let min = arr[0];
             for (let i =0 ; i<arr.length;i++){
@@ -23,7 +24,7 @@
             }
             return min;
         }
-        let result = minArray(arr1);
+        let result = minArray(arr2);
         document.write(result)
     </script>
 </body>
