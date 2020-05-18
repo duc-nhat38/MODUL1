@@ -10,20 +10,28 @@
 <body>
     <h1>Caro Game Simple</h1>
     <div id="div1"></div>
-    <button type="button" onclick="gameCaro()">Change Value</button>
+    <button type="button" value="Change Value" onclick="gameCaro()">Change Value</button>
     <script>
-        let sum = '';
+        let data = '';
         let array = [];
         for (let i = 0; i < 5; i++) {
             array[i] = [];
-            sum += '<br>'
+            data += '<br>'
             for (let j = 0; j < 5; j++) {
                 array[i][j] = 0;
-                sum += array[i][j] + "&nbsp;&nbsp;"
+                data += array[i][j] + "&nbsp;&nbsp;"
 
             }
-            document.getElementById('div1').innerHTML = sum;
+            document.getElementById('div1').innerHTML = data;
         }
+        function gameCaro() {
+            let X = +prompt('Nhập tọa độ x:');
+            let Y = +prompt('Nhập tọa độ y:');
+            let data = '';
+            array[X][Y] = 'x';
+            
+        }
+        
     </script>
 </body>
 
