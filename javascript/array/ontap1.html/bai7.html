@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = prompt('Nhập vào 10 chữ số');
+        let num = prompt('Nhập số V muốn kiểm tra:');
+        let arr = numbers.split('');
+        let sum;
+        for (let i=0;i<arr.length;i++){
+            if (arr[i]===num){
+                arr.splice(i,1);
+                 arr.splice((i+1),0,num);
+                break;
+            }
+        }alert(arr)
+    </script>
+</body>
+</html>

@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2>Temperature Converter</h2>
     Fahrenheit : <input type="number" id="input1" oninput="myInput()"><br>
     Celcius : <div id="div1"></div>
     <script>
         function celius(fahrenheit) {
-            return (fahrenheit-32)/1.8;
+            return (fahrenheit - 32) / 1.8;
         }
-        function myInput(){
-        let F = document.getElementById('input1').value;
-        let result = celius(F)
-        document.getElementById('div1').innerHTML=result;
+        function myInput() {
+            let F = document.getElementById('input1').value;
+            let result = celius(F)
+            document.getElementById('div1').innerHTML = result;
         }
     </script>
 </body>
+
 </html>

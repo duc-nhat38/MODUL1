@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers =[1,5,3,7,8,9,4,6,8,2,1,2,4,5,34];
+        let max = numbers[0];
+        let sum = 0 ;
+        for (let i = 0;i<numbers.length;i++){
+            sum += numbers[i]
+            if (max<numbers[i]){
+                max = numbers[i];
+                
+
+            }
+        }document.write('Giá trị lớn nhất là :'+max+', giá trị trung bình là :'+(sum/numbers.length));
+    </script>
+</body>
+</html>
