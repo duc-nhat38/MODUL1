@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let Constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function string(str) {
+            for (let i = 0; i < Star.length; i++) {
+                if (Star[i] === str) {
+                    return Constellation[i];
+                }
+                
+            }
+            return 'Không có ngôi sao này.'
+        } let str = prompt('Nhập tên ngôi sao (VD: Polaris) :');
+        alert('Ngôi sao bạn kiếm thuộc chòm sao ' + (string(str)));
+    </script>
+</body>
+
+</html>
