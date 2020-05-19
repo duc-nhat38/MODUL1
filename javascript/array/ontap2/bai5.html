@@ -13,22 +13,21 @@
         let str2 = prompt('Nhập chuỗi thứ hai:');
         let arr1 = str1.split('');
         let arr2 = str2.split('');
+        let check = true ;
         if (arr1.length === arr2.length) {
-            let sum = 0;
             for (let i = 0; i < arr1.length; i++) {
-                
-                if (arr1[i] === arr2[i]) {
-                    sum++;
+                if (arr1[i] !== arr2[i]) {
+                    check = false;
                 }
-            }
-            if (sum === arr1.length) {
-                alert('Giống nhau.');
-            } else {
-                alert('Không giống nhau.');
             }
         }
         else {
-            alert('Không giống nhau.');
+            check = false;
+        }
+        if(check){
+            alert('Hai chuỗi giống nhau.')
+        }else{
+            alert('hai chuỗi khác nhau.')
         }
     </script>
 </body>
