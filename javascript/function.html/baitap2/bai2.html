@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        const PI = 3.14;
+
+        function chuvi(r){
+            let C = (2*r*PI);
+             return C;
+        }
+
+        function dientich(r){
+            let S = (PI*(r**2));
+            return S;
+        }
+        
+        let num;
+        do {
+            num = +prompt('Bạn muốn tính gì? chọn 0 nếu tính chu vi, 1 nếu muốn tính diện tích');
+        }while(num!==0 && num!==1){
+            let bankinh = parseFloat(prompt('Nhập bán kính hinh tròn :'));
+             if (num===0){
+                alert(chuvi(bankinh));
+                
+             }
+             else{
+                 alert(dientich(bankinh));
+             }}
+        
+    </script>
+</body>
+</html>
