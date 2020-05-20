@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = prompt('Nhập vào một chuỗi:');      
+        function isPalindrome(str) {
+            let check = true;
+            let arr = str.split('');
+            for (let i = 0; i < arr.length/2; i++) {
+                if (arr[i] != arr[arr.length-(i+1)]){
+                    check = false;
+                    break;
+                }
+            }
+            return check;            
+        }
+        result=isPalindrome(str)
+        console.log("result:"+result)
+        if(result){
+            alert('chuoi vua nhap la chuoi doi xung')
+        }else{
+            alert('khong phai la chuoi doi xung')
+        }
+    </script>
+</body>
+
+</html>

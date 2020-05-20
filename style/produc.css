@@ -1,0 +1,30 @@
+ .div1 {
+    display: flex;
+    background-color: rgb(226, 225, 238);    
+    padding: 30px;
+    flex: 8;
+    width: 50%;
+    
+}
+#input1 {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.button1 {
+    margin-left: 5px;
+    background-color: rgb(30, 255, 0);
+    border-radius: 5px;
+    width: 50px;
+    height: 35px;
+} 
+table {
+    width: 55%;
+}
+.col1 {
+    width: 30%;
+}
+.col2 ,.col3{
+    width: 10%;
+    text-align: right;
+}
