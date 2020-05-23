@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="500px" height="500px"></canvas>
+    <script>
+
+        function Rectangle(width, height) {
+            this.width = width,
+                this.height = height,
+                this.circum = function () {
+                    return alert('Chu vi hình chữ nhật là : ' + (width + height) * 2);
+                }
+            this.area = function () {
+                return alert('Diên tích hình chữ nhật là : ' + (width * height));
+            }
+            this.getRactangle = function () {
+                let canvas = document.getElementById('canvas').getContext('2d');
+                //let x = rectangle.width;
+                //let y = rectangle.height;
+                canvas.fillStyle = "red"
+                canvas.fillRect(0, 0, rectangle.width, rectangle.height)
+
+
+            }
+
+        }
+        let rectangle = new Rectangle(250, 100);
+        rectangle.circum();
+        rectangle.area();
+        rectangle.getRactangle();
+    </script>
+</body>
+
+</html>
