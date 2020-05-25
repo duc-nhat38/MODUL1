@@ -1,6 +1,7 @@
 
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
+let img = document.getElementById("myCar");
 function Rectangle() {
     ctx.fillStyle = "yellow"
     ctx.fillRect(40, 40, 40, 40)
@@ -10,11 +11,10 @@ function Racing(x, y, width, height) {
         this.y = y,
         this.width = width,
         this.height = height
+
     this.myCar = function () {
-        window.onload = function () {
-            let img = document.getElementById("myCar");
-            ctx.drawImage(img, car.x, car.y, car.width, car.height)
-        };
+        
+        ctx.drawImage(img, car.x, car.y, car.width, car.height);
     }
 }
 Rectangle();
@@ -35,10 +35,14 @@ function moveRight() {
 }
 
 function keyDown(e) {
+    console.log(e.keyCode);
     switch (e.keyCode) {
-        
+
         case 39:
+            
             moveRight();
+            ctx.clearRect(0, 0, 600, 400);
+            car.myCar();
             break;
         case 38:
             moveUp();
@@ -48,5 +52,6 @@ function keyDown(e) {
             break;
     }
 }
+
 document.addEventListener("keydown", keyDown);
-car.myCar();
+

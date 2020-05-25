@@ -7,13 +7,18 @@
 </head>
 <body>
     <script>
-        let number = prompt('Nhập vào 1 dãy số:');
-        let num = prompt('Nhập số V muốn kiểm tra :');
-        let arr = number.split('');
-        if (arr.includes(num)){
-            document.write("V is in the array");
-        }else{
-            document.write("V is not in the array");
+        let array = [];
+        for (let i = 0; i < 10; i++) {
+             let arr = +prompt('nhập số vào mảng :');
+             array.push(arr);
+            
+        }
+        let num = +prompt('Nhập số kiểm tra :')       
+        let test = array.indexOf(num);
+        if (test != -1) {
+            alert('có' + (test+1));
+        }else {
+            alert('ko')
         }
     </script>
 </body>

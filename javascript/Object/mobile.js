@@ -1,10 +1,9 @@
 function Mobile1(){
-    this.pin = function(){
-        let pin = 100;          
-    }
-    this.mess = function(){
-        
-    }
+    
+    document.addEventListener('click', message);
+    document.addEventListener('click', betary);
+    document.addEventListener('click', turnOn);
+  
 }
 
 function turnOn(){
@@ -12,12 +11,13 @@ function turnOn(){
     if (ask1){
         let ask2 = confirm('bạn muốn bật điện thoại nào?');
         if(ask2) {
-            document.write(nokia)
+            Mobile1()
         }else {
             document.write(iphone)
         }
     }
 }
+
 function message() {
     let memory = [];
     let write = prompt('Soạn tin nhắn : ');
@@ -29,3 +29,18 @@ function message() {
     }
     
 }
+let pin = 100;
+function betary() {
+    
+    if (turnOn()){
+        pin-=100
+    }
+}
+function change(){
+    pin +=1;
+    if(pin===100){
+        break;
+    }
+}
+turnOn()
+Mobile1();
