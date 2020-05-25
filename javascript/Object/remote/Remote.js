@@ -53,9 +53,9 @@ console.log(tivi.status);
 tivi.setChanel(7)
 console.log(tivi.getChanel());
 let remote = new Remote(3);
-remote.changeChanel();
+remote.changeChanel(tivi);
 console.log(tivi.getChanel());
 tivi.setVolume(2);
 console.log(tivi.getVolume());
-remote.turnOffTv();
+remote.turnOffTv(tivi);
 console.log(tivi.status);
