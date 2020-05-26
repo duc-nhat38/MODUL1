@@ -1,22 +1,22 @@
 class Rat {
-    constructor(name,weight) {
-        this.name = name ;
+    constructor(name, weight) {
+        this.name = name;
         this.weight = weight;
-        this.speed = Math.floor(Math.random()*100) ;     
+        this.speed = Math.floor(Math.random() * 100);
     }
     chirp() {
         return 'chít chít';
     }
     getName() {
-       return this.name;
+        return this.name;
     }
 }
 class Cat {
-    constructor(name,weight){
-        this.name = name ;
+    constructor(name, weight) {
+        this.name = name;
         this.weight = weight;
-        this.maxSpeed = Math.floor(Math.random()*100);
-        
+        this.maxSpeed = Math.floor(Math.random() * 100);
+
     }
     getWeight() {
         return this.weight;
@@ -25,17 +25,17 @@ class Cat {
         return 'meo meo';
     }
     catchMouse(rat) {
-        return cat.maxSpeed>rat.speed?'Mèo đã bắt được chuột.':'Chuột đã chạy thoát.'
+        return cat.maxSpeed > rat.speed ? 'Mèo đã bắt được chuột.' : 'Chuột đã chạy thoát.'
     }
-    eat(rat){
-       rat.name = 'Chuột đã bị ăn thịt.';
-       this.weight += 1;
+    eat(rat) {
+        rat.name = 'Chuột đã bị ăn thịt.';
+        this.weight += 1;
     }
 }
-let rat = new Rat('Jerry',2);
+let rat = new Rat('Jerry', 2);
 console.log(rat.getName());
 console.log(rat.chirp());
-let cat = new Cat('Tom',5);
+let cat = new Cat('Tom', 5);
 console.log(cat.getWeight());
 console.log(cat.chirp());
 console.log(cat.catchMouse(rat));
