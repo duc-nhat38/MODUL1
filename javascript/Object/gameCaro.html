@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,47 @@
             width: 500px;
             height: 500px;
         }
-        tr , td {
+
+        tr,
+        td {
             border: 1px solid black;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
-    <script src="/javascript/Object/gameCaro.js"></script>
+    <div id="div1"></div>
+    <!-- <script src="/javascript/Object/gameCaro.js"></script> -->
+    <script>
+
+        let array = [];
+        function table() {
+            let data = '';
+            data = '<table>'
+            for (let i = 0; i < 20; i++) {
+                data += '<tr>'
+                array[i] = [];
+
+                for (let j = 0; j < 20; j++) {
+                    array[i][j] = '';
+                    data += '<td>' + array[i][j] + '</td>'
+                }
+                data += '</tr>'
+            }
+            data += '</table>';
+            return data;
+        }
+        table();
+        function showCoords(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            
+        }
+
+        document.addEventListener('click', playe1);
+        document.addEventListener('click', playe2);
+    </script>
 </body>
+
 </html>

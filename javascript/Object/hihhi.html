@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student {
+            constructor(name,id,email){
+                this.name = name ;
+                this.id = id ;
+                this.email = email ;
+            }
+            getName() {
+                return this.name;
+            }   
+            getID() {
+                return this.id ;
+            }   
+            getEmail() {
+                return this.email;
+            }   
+            setName(name) {
+                this.name = name ;
+            }
+            setID(id) {
+                this.id = id ;
+            }
+            setEmail(email) {
+                this.email = email ;
+            }
+            checkMail (email) {
+                if (this.email === 'thanh.codegym@gmail.com'){
+                        this.name = 'Thanh'
+            }else {
+                return 'Không có email này.'
+            }
+
+            }
+        }
+       
+         let student1 = new Student('Duc',01,'duc.codegym@gmail.com');
+         let student2 = new Student('Hiep',02,'hiep.codegym@gmail.com');
+         let student3 = new Student('Linh',03,'thanh.codegym@gmail.com');
+         let student4 = new Student('Thang',04,'thang.codegym@gmail.com');
+         let student5 = new Student('Lan',05,'lan.codegym@gmail.com');
+         let student6 = new Student('Binh',06,'binh.codegym@gmail.com');
+         let student7 = new Student('Dat',07,'dat.codegym@gmail.com');
+         let student8 = new Student('Khanh',08,'khanh.codegym@gmail.com');
+         let student9 = new Student('Hoang',09,'hoang.codegym@gmail.com');
+         let student10 = new Student('Long',10,'long.codegym@gmail.com');
+         
+    </script>
+</body>
+</html>

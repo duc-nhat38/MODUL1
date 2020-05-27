@@ -1,20 +1,18 @@
-let table = '<table>'
-for (let i = 0;i<20;i++){
-    table += '<tr>';
-    for (let j = 0;j<20;j++){
-        table += '<td>'+'</td>';
-    }
-    table += '</tr>'
-}table+= '</table>';
-document.write (table)
+function table() {
+    let data = '';
+    let array = [];
+    for (let i = 0; i < 20; i++) {
+        array[i] = [];
+        data += '<br>'
+        for (let j = 0; j < 20; j++) {
+            array[i][j] = 0;
+            data += array[i][j] + "&nbsp;&nbsp;"
 
-function Player1(){
-    confirm('lượt player1');
-    document.write('O');
+        }
+
+
+    }
+    return data;
 }
-function Player2() {
-    confirm('lượt player2');
-   document.write('X');
-}
-document.addEventListener('click', Player1);
-document.addEventListener('click', Player2);
+table();
+document.getElementById('div1').innerHTML = table();

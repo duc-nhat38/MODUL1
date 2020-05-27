@@ -29,6 +29,8 @@ class Cat {
     }
     eat(rat) {
         rat.name = 'Chuột đã bị ăn thịt.';
+        rat.weight = 0;
+        rat.speed = 0;
         this.weight += 1;
     }
 }
